@@ -1,0 +1,59 @@
+==================================================
+30. RESEARCH REPORT USAGE
+==================================================
+
+Two long research reports are provided in /research.
+
+They are REFERENCE MATERIAL, not implementation specifications.
+
+Do not treat a claim as established merely because one report states it confidently.
+
+The reports contain:
+- primary-source excerpts
+- patent interpretation
+- technical hypotheses
+- implementation suggestions
+- speculative parameter values
+- community reports
+- proposed experiments
+
+Some details conflict between the two reports, and some plausible engineering hypotheses are presented with more certainty than the underlying evidence warrants.
+
+AUTHORITY ORDER:
+
+1. This project prompt
+2. docs/ARCHITECTURE.md and docs/EVIDENCE_AND_HYPOTHESES.md
+3. The supplied research reports
+4. Your own inference
+
+When a research report conflicts with the project specification, FOLLOW THE PROJECT SPECIFICATION.
+
+When the reports disagree with each other:
+- do not silently choose one;
+- identify the disagreement;
+- prefer primary-source evidence;
+- otherwise preserve the uncertainty as a configurable experiment.
+
+Especially DO NOT hardcode as historical facts any unsupported values for:
+- target-note hysteresis
+- note-confirmation period count
+- voiced-confidence hold duration
+- Tracking epsilon
+- Humanize onset/ramp timing
+- Retune Speed -> tau mapping
+- cycle-splice crossfade duration
+- exact EFX3 latency
+
+If one of these values is useful as an engineering starting point, place it behind a developer parameter and document:
+
+    Evidence status: EXPERIMENTAL
+
+The research reports are most useful for:
+- understanding the reasoning behind the architecture
+- consulting patent equations
+- locating primary sources
+- identifying alternative hypotheses
+- designing tests
+- understanding why certain modern DSP approaches are intentionally excluded
+
+They must not override the project's epistemic discipline.

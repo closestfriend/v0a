@@ -1,0 +1,8 @@
+sample_rate=48000
+frames=48000
+fundamental_hz=220
+phase=0
+format=mono_float32_wav
+sine_peak=0.6
+saw_peak=0.7
+vowel_peak=0.7

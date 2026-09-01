@@ -1,0 +1,11 @@
+build/
+build-plugin/
+build-sanitize/
+.DS_Store
+CLAUDE.md
+AGENTS.md
+.claude/
+.env
+.env.local
+docs/V1_LAB_DEV_CHEAT_SHEET.html
+research/shopping list.rtfd/
